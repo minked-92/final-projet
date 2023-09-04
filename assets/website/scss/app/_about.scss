@@ -1,0 +1,61 @@
+.flex-conteneur {
+    display: flex;
+    flex-direction: column;
+    margin: 0; // max-width: 1800px;
+    // width: 100%;
+    max-height: 750px;
+    height: 100%;
+    overflow: scroll;
+    width: 1310px;
+}
+
+.conteneur-about-grid {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.left-section-text {
+    // flex: 1 1 70%;
+    width: 50%;
+    padding: 15px 0;
+
+}
+
+.right-section-backgroud-conteneur {
+    // flex: 1 1 30%;
+    margin-bottom: 55px;
+    background-image: url("/public/img/shibari-bg.jpg");
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 850px;
+    max-width: 550px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.about-item {
+    line-height: 25px;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: 'Rampart One';
+}
+
+.paragraphe {
+    width: 670px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 900px) {
+
+    .conteneur-about-grid{
+        flex-wrap: wrap;
+    }
+    
+}

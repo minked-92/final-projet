@@ -1,0 +1,39 @@
+body{
+    font-family: 'Roboto';
+    background: rgb(22, 9, 27);
+    background:  rgba(204, 185, 246, 1) 66%;
+}
+
+.inside {
+    max-width: 1360px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+
+.next-step-btn {
+  background-image: linear-gradient(to right, #800080, #000000);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.next-step-btn:hover {
+  background-image: linear-gradient(to right, #000000, #800080);
+  opacity: 1;
+  border-radius: 5px;
+}
+
+a{
+  color: aliceblue;
+}
+
+.title-conteneur{
+  margin: 50px 0px 50px;
+}
