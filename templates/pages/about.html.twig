@@ -1,0 +1,47 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+
+
+	<section id="about-conteneur" class="section">
+
+		<div class="inside">
+			<div class="title-conteneur">
+				<span>
+					<h1 class="title-about">About - について</h1>
+				</span>
+			</div>
+		
+		<div class="conteneur-about-grid">
+			<div class="flex-conteneur">
+				{% for section in content.article_about_items %}
+					<div class="left-section-text">
+						<div class="about-item">
+							<div class="title">
+								<h2 class="title-paragraphe">{{ section.title }}</h2>
+							</div>
+
+							<div class="paragraphe-conteneur">
+								<p class="paragraphe">{{ section.paragraphe }}</p>
+							</div>
+						</div>
+
+
+					</div>
+				{% endfor %}
+			</div>
+
+			<div class="right-section-backgroud-conteneur">
+				<div class="section-background"></div>
+			</div>
+
+		</div>
+
+		</div>
+
+	</section>
+
+
+	{{ content.article|raw }}
+{% endblock %}
+

@@ -1,0 +1,46 @@
+#footer {
+    position: relative;
+    background-color: rgba(22, 9, 27, 0.8589810924369747);
+    color: rgb(219, 219, 219);
+  
+    .contact-title {
+      margin: 0px;
+      text-decoration: underline;
+    }
+  
+    .picto-facebook {
+      width: 30px;
+    }
+  
+    .social-media-list {
+      display: flex;
+      justify-content: flex-start;
+      gap: 15px;
+      align-items: center;
+    }
+  
+    .contact-footer {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+      padding: 15px 0px;
+    }
+
+
+    .insta-link{
+        background-image: url(/public/img/insta_black.svg);
+        height: 15px;
+        width: 15px;
+      }
+  
+      .fb-link{
+        background-image: url(/public/img/Vector.svg);
+        height: 15px;
+        width: 15px;
+      }
+
+
+  }
+  

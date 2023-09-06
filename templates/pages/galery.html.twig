@@ -1,0 +1,45 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+
+	<section>
+		<div id="art-gallery">
+
+			{# 
+						{% for section in content.block_img %}
+										<div class="small-image-border" onclick="modalTrigger(0)">
+											<img class="image-1 responsive" src="{{ section.image.url }}" alt="">
+										</div>
+									{% endfor %} #}
+
+			{# {% for section in content.block_img %}
+							<div class="small-image-border" onclick="modalTrigger('{{ section.image.url }}')">
+								<img class="image-1 responsive" src="{{ section.image.url }}" alt="">
+							</div>
+						{% endfor %} #}
+
+				{% for section in content.block_img %}
+					<div class="small-image-border" id="{{loop.index0}}" > 
+					<img  class="image-1 responsive" src="{{ section.image.url }}" alt="">
+				</div>
+			{% endfor %}
+
+
+			<div id="myModal" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content" id="img01">
+				<div id="caption"></div>
+			</div>
+
+
+		</div>
+		<div class="background-bottom-container">
+			<img class="backdrop" src="{{ asset('img/Blackparquet.jpg') }}">
+		</div>
+	</div>
+
+</section>
+
+{{ content.article|raw }}{% endblock %}{% block javascripts %}
+{{ encore_entry_script_tags('app') }}{% endblock %}
+

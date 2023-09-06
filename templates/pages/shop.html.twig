@@ -1,0 +1,58 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+
+
+	<section id="item-section">
+		<div class="inside">
+
+			<div class="title-conteneur">
+				<span>
+					<h1 class="title-shop">Shop - ショップ</h1>
+				</span>
+			</div>
+
+			<div class="product-list">
+
+
+				{% for section in content.block_items_shop %}
+					<div class="product-item" data-id="{{ section.image.url }}" data-image="{{ section.image.url }}">
+						<a href="#" class="product-item-link">
+							<div class="product-img-container">
+								<figure class="product-list-image-container">
+									<div class="image-wrapper">
+										<img class="img-itemes-shop" src="{{ section.image.url }}" alt="">
+									</div>
+								</figure>
+							</div>
+
+							<div class="product-list-info">
+								<div class="product-title">
+
+									<p>{{ section.title }}</p>
+
+								</div>
+								<span class="produc-list-info-price">{{ section.price }}
+									€</span>
+							</div>
+						</a>
+					</div>
+				{% endfor %}
+
+
+				<div class="modal">
+					<div class="modal-content">
+						<span class="close">&times;</span>
+					</div>
+
+
+				</section>
+
+
+				{{ content.article|raw }}
+			{% endblock %}
+
+			{% block javascripts %}
+				{{ encore_entry_script_tags('app') }}
+			{% endblock %}
+
