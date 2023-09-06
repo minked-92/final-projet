@@ -27,34 +27,37 @@
 
 			<nav class="nav-bar">
 				<div class="inside inside-nav">
-					  <div id="burger">ニ</div>
+					<div id="burger">ニ</div>
 
-					  <div class="logo"><a href="/">美術</a></div>
+					<div class="logo">
+						<a href="/">美術</a>
+					</div>
 
-					<ul class="navigation unshow">
+					<ul
+						class="navigation unshow">
 
 
 						{# <li class="nav-link">
-							<a href="shop.html">Shop</a>
-						</li> #}
+																									<a href="shop.html">Shop</a>
+																								</li> #}
 
 						{% if not app.user %}
-						<li class="nav-link">
-							<a href="inscription.html">Connexion</a>
-						</li>
+							<li class="nav-link">
+								<a href="inscription.html">Connexion</a>
+							</li>
 						{% else %}
 
-						<li class="nav-link">
+							<li class="nav-link">
 								<a href="about.html">About</a>
-						</li>
+							</li>
 
-						<li class="nav-link">
-							<a href="galery.html">Gallery</a>
-						</li>
+							<li class="nav-link">
+								<a href="galery.html">Gallery</a>
+							</li>
 
-						<li class="nav-link">
-							<a href="{{ path('security_logout')}}">Deconnexion</a>
-						</li>
+							<li class="nav-link">
+								<a href="{{ path('security_logout')}}">Deconnexion</a>
+							</li>
 
 						{% endif %}
 
@@ -82,9 +85,9 @@
 		</header>
 
 		{# <form action="{{ path('sulu_search.website_search') }}" method="GET">
-							<input name="q" type="text" placeholder="Search"/>
-							<input type="submit" value="Go"/>
-						</form> #}
+													<input name="q" type="text" placeholder="Search"/>
+													<input type="submit" value="Go"/>
+												</form> #}
 
 		<main>
 			{% block content %}{% endblock %}
@@ -95,39 +98,46 @@
 
 			<div class="inside">
 				<div class="contact-footer">
-					<h1 class="contact-title">
-						<strong>Contact :</strong>
-					</h1>
 
 					<div class="social-media-footer-conteneur">
 						<ul class="social-media-list">
-							<li class="insta">
-								<a
-									href="" class="insta-link"><img src="img/insta_black.svg" alt="instagram" class="picto-insta">
-								</a>
+							<li class="logo-footer">
+								<a href="/" class=""></a>
 							</li>
+
+							<li class="insta">
+								<a href="" class="insta-link">Instagram</a>
+							</li>
+
 							<li class="facebook">
-								<a
-									href="" class="fb-link">{# <img src="" alt="facebook" class="picto-facebook"> #}
-								</a>
+								<a href="" class="fb-link">Facebook</a>
 							</li>
 
 							<li>
 								<a href="">
-									<span class="mail-adresse"><a href="mailto:minkedart@gmail.com" target="_blank">minkedart@gmail.com</a></span>
+									<span class="mail-adresse">
+										<a href="mailto:minkedart@gmail.com" target="_blank">@mail</a>
+									</span>
 								</a>
 							</li>
-							
 						</ul>
 					</div>
+
+
+					<div class="copyright">
+						&copy; 2023 MinkedArt. Tous droits réservés.
+						<a href="">Mentions Legal</a>
+					</div>
 				</div>
+
+
 			</div>
 
 			{# {% block footer %}
-										<p>Copyright
-											{{ 'now'|date('Y') }}
-											SULU</p>
-									{% endblock %} #}
+																			<p>Copyright
+																				{{ 'now'|date('Y') }}
+																				SULU</p>
+																		{% endblock %} #}
 		</footer>
 
 		{% block javascripts %}
