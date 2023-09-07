@@ -1,0 +1,72 @@
+#legal-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    height: 100vh;
+    
+  }
+
+  .inside-legal{
+    
+  }
+
+  .title-legal{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .section-edition,
+  .section-hebergement,
+  .section-directeur,
+  .section-contact,
+  .section-donnees {
+    border-radius: 5px;
+    // padding:0 20px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .info-nom,
+  .info-adresse,
+  .info-nationalite,
+  .info-date-naissance {
+    // margin-bottom: 10px;
+  }
+  
+  .contact-ovh {
+    color: #0073e6; /* Couleur des liens */
+    text-decoration: none;
+  }
+  
+  .contact-ovh:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-legal {
+    text-align: center;
+    // margin-top: 20px;
+    font-size: 14px;
+    color: #777; /* Couleur du texte du pied de page */
+  }
+
+  @media screen and (max-width: 768px) {
+    .section-edition,
+    // .section-hebergement,
+    // .section-directeur,
+    // .section-contact,
+    // .section-donnees {
+    //   padding: 10px;
+    // }
+   
+    
+    .title-legal {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .footer-legal{
+        
+    }
+  }

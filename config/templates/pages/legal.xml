@@ -3,15 +3,15 @@
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template-1.0.xsd">
 
-    <key>about</key>
+    <key>legal</key>
 
-    <view>pages/about</view>
+    <view>pages/legal</view>
     <controller>Sulu\Bundle\WebsiteBundle\Controller\DefaultController::indexAction</controller>
     <cacheLifetime>604800</cacheLifetime>
 
     <meta>
-        <title lang="en">about</title>
-        <title lang="de">about</title>
+        <title lang="en">Legal</title>
+        <title lang="de">Standard</title>
     </meta>
 
     <properties>
@@ -42,50 +42,5 @@
                 <title lang="de">Artikel</title>
             </meta>
         </property>
-
-
-
-
-         <section name="item_about">
-        <meta>
-            <title lang="en">item-about</title>
-        </meta>
-        <properties>
-            <block name="article_about_items">
-                <types>
-                    <type name="texte_type">
-                        <properties>
-                            
-                            <property name="title" type="text_line">
-                                <meta>
-                                    <title>title</title>
-                                </meta>
-                            </property>
-
-                            <property name="paragraphe" type="text_area">
-                                <meta>
-                                    <title>paragraphe</title>
-                                </meta>
-                            </property>
-
-                        </properties>
-                    </type>
-                </types>
-
-            
-            </block>
-        </properties>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
     </properties>
 </template>

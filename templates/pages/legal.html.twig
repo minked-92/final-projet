@@ -1,0 +1,63 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+	
+
+
+	<section id="legal-page">
+  
+		<div class="inside inside-legal">
+     
+			<div class="section-edition">
+
+                <h1>{{ content.title }}</h1>
+
+				<h2 class="title-legal">Edition du site</h2>
+				<p>Le présent site, accessible à l’URL
+					<a href="/">www.minkedart.fr</a>
+					(le « Site »), est édité par :</p>
+				<ul>
+					<li class="info-nom">Nom : Mickael Del cerro</li>
+					<li class="info-adresse">Adresse : 69006</li>
+					<li class="info-nationalite">Nationalité : Française (France)</li>
+					<li class="info-date-naissance">Date de naissance : 16/08/1992</li>
+				</ul>
+			</div>
+			<div class="section-hebergement">
+				<h2 class="title-legal">Hébergement</h2>
+				<p>Le Site est hébergé par la société OVH SAS, situé au 2 rue Kellermann - BP 80157 - 59053 Roubaix Cedex 1.</p>
+				<p class="contact-ovh">Contact téléphonique ou email : 1007</p>
+			</div>
+			<div class="section-directeur">
+				<h2 class="title-legal">Directeur de publication</h2>
+				<p>Le Directeur de la publication du Site est Mickael Del cerro.</p>
+			</div>
+			<div class="section-contact">
+				<h2 class="title-legal">Nous contacter</h2>
+				<ul>
+					<li class="contact-telephone">Par téléphone : +33786859886</li>
+					<li class="contact-email">Par email :
+						<a href="mailto:minkedart@gmail.com">minkedart@gmail.com</a>
+					</li>
+					<li class="contact-courrier">Par courrier : 20 Bd Eugène Deruelle, 69003 Lyon</li>
+				</ul>
+			</div>
+			<div class="section-donnees">
+				<h2 class="title-legal">Données personnelles</h2>
+				<p>Le traitement de vos données à caractère personnel est régi par notre Charte
+																			             du respect de la vie privée, disponible depuis la section "Charte de Protection
+																			              des Données Personnelles", conformément au Règlement Général sur la Protection
+																			               des Données 2016/679 du 27 avril 2016 («RGPD»).</p>
+			</div>
+			<div class="footer-legal">
+				<p>Génération des mentions légales par
+					<a href="">Legalstart</a>
+					.</p>
+			</div>
+		</div>
+	</section>
+
+
+	{{ content.article|raw }}
+{% endblock %}
+
