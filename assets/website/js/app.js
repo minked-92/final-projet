@@ -6,3 +6,4 @@ import '../scss/app.scss';
 import './app/teste';
 import './app/galery';
 import './app/burger';
+import './app/message';
