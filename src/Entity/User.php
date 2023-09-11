@@ -31,6 +31,11 @@ class User implements UserInterface
     private $email;
 
     /**
+     * @ORM\Column(type="json")
+     */
+    private $roles = ['ROLE_USER'];
+
+    /**
      * @ORM\Column(type="string", length=255)
      */
     private $username;
@@ -105,6 +110,11 @@ class User implements UserInterface
 
     public function getRoles()
     {
-        return ['ROLE_USER'];
+        // recuperer les rôles de l'utilisateur
+        $roles = $this->roles;
+        // ajout du role user par default
+        $roles[] = 'ROLE_USER';
+        // retourner les rôles de l'utilisateur
+        return array_unique($roles);
     }
 }

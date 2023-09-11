@@ -1,0 +1,4 @@
+admin_messages:
+    path: '/messages/admin'
+    controller: 'App\Controller\AdminMessageController::viewMessages'
+    methods: ['GET']

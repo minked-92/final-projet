@@ -1,0 +1,24 @@
+{# templates/admin/messages.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <h1>Messages</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Email</th>
+                <th>Texte</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for message in messages %}
+                <tr>
+                    <td>{{ message.nom }}</td>
+                    <td>{{ message.email }}</td>
+                    <td>{{ message.text }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
