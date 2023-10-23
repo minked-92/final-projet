@@ -3,7 +3,7 @@
     flex-direction: column;
     margin: 0; // max-width: 1800px;
     // width: 100%;
-    max-height: 750px;
+    // max-height: 750px;
     height: 100%;
     overflow: scroll;
     width: 1310px;
@@ -52,10 +52,22 @@
     text-align: justify;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px ) {
 
     .conteneur-about-grid{
         flex-wrap: wrap;
     }
+
+    .right-section-backgroud-conteneur{
+        display: none;
+    }
     
+    .paragraphe{
+        width: 305px;
+    }
+
+    .title-paragraphe{
+        width: 300px;
+    }
 }
+

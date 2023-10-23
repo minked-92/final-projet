@@ -7,10 +7,10 @@
     padding: 35px 0;
 }
 
-::-webkit-scrollbar-#art-gallery{
-    background: red; 
-    border-radius: 10px;
-  }  
+// ::-webkit-scrollbar-#art-gallery{
+//     background: red; 
+//     border-radius: 10px;
+//   }  
 
 .responsive {
     height: 100%;
@@ -143,9 +143,9 @@
 /* The Close Button */
 .close {
     position: absolute;
-    top: 55px;
-    right: 55px;
-    color: #f1f1f1;
+    top: 255px;
+    right: 380px;
+    color: red;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
@@ -161,3 +161,22 @@
 // .background-bottom-container{
 //     background-image: src("");
 // }
+
+@media screen and (max-width: 900px ) {
+
+    #art-gallery{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .close {
+        font-size: 30px;
+        position: absolute;
+        top: 135px;
+        right: 40px;
+        cursor: pointer;
+        color: red;
+    }
+    
+    
+}

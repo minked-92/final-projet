@@ -93,7 +93,7 @@
 
     .navigation {
         display: flex;
-        flex-direction: row-reverse;
+        // flex-direction: row-reverse;
         gap: 55px;
         margin-right: 55px;
 
@@ -169,8 +169,8 @@
             position: absolute;
             top: 60px;
             right: 0;
-            left: 0;
-
+            // left: 0;
+            z-index: 99;
             transition: all .3s ease;
         }
 
@@ -178,6 +178,14 @@
             color: #f1f1f1;
             text-decoration: none;
             margin-bottom: 10px;
+        }
+
+        .inside-nav{
+            flex-direction: row-reverse;
+        }
+
+        .navigation{
+            margin-right: 15px;
         }
     }
 }

@@ -3,7 +3,7 @@
     "app": {
       "js": [
         "/build/website/runtime.js",
-        "/build/website/vendors-node_modules_core-js_modules_es_array_concat_js-node_modules_core-js_modules_es_array-cfe40b.js",
+        "/build/website/vendors-node_modules_core-js_modules_es_array_concat_js-node_modules_core-js_modules_es_array-e0f160.js",
         "/build/website/app.js"
       ],
       "css": [

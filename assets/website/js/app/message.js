@@ -20,7 +20,8 @@ console.log('ok');
                 return response.json();
             })
             .then(() => {
-                // Action après une soumission réussie (par exemple, appel à showTab())
+                // Action après une soumission réussie
+                //  (par exemple, appel à showTab())
                 showTab();
             })
             .catch(() => null); // Gestion des erreurs, vous pouvez personnaliser cette partie

@@ -11,7 +11,8 @@ class AdminMessageController extends AbstractController
 {
     public function viewMessages(MessageRepository $mr): Response
     {
-        // Votre logique pour récupérer les messages depuis la base de données
+        //  logique pour récupérer les messages depuis
+        //  la base de données
 
         $messages = $mr->findAll();
 

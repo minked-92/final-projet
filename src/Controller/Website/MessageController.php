@@ -14,7 +14,8 @@ class MessageController extends AbstractController
     /**
      * @Route("/message", name="message", methods={"POST"})
      */
-    public function contact(Request $request,  EntityManagerInterface $manager): JsonResponse
+    public function contact(Request $request,
+      EntityManagerInterface $manager): JsonResponse
     {
         $data = $request->request->all();
         

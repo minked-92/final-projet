@@ -44,9 +44,6 @@
         </property>
 
 
-
-
-
     <block name="block_img">
         <types>
             <type name="image_type">
